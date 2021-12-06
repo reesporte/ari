@@ -1,9 +1,11 @@
 # ari
 `ari` lexes, parses, and interprets arithmetic expressions
 
+```
 expression = <number> | <expression> <operator> <expression> 
 number = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 operator = + | - | * | /
+```
 
 `lex` lexes expressions into tokens  
 `par` parses expressions into abstract syntax trees using the shunting yard algorithm and recursively evaluates them
