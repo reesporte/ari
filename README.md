@@ -1,11 +1,4 @@
 # ari
-`ari` lexes, parses, and interprets arithmetic expressions
-
-## package layout
-`lex` lexes expressions into tokens  
-`par` parses expressions into abstract syntax trees using the shunting yard algorithm and recursively evaluates them
-
-## usage
 `ari` will lex, parse and evaluate arithmetic expressions from a file
 ```bash
 $ cat example.input
