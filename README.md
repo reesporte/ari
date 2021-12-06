@@ -1,6 +1,7 @@
 # ari
 `ari` lexes, parses, and interprets arithmetic expressions
 
+## package layout
 `lex` lexes expressions into tokens  
 `par` parses expressions into abstract syntax trees using the shunting yard algorithm and recursively evaluates them
 
