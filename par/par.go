@@ -122,11 +122,7 @@ func Parse(line string) Node {
 	operands := Stack{}
 	for _, tkn := range tkns {
 		if tkn.Class == lex.NUM {
-			val, err := strconv.ParseFloat(tkn.Repr, 64)
-			if err != nil {
-				intval, _ := strconv.Atoi(tkn.Repr)
-				val = float64(intval)
-			}
+			val, _ := strconv.ParseFloat(tkn.Repr, 64)
 			operands.Push(&Node{num: val})
 		} else if tkn.Class == lex.OP {
 			t := &Node{op: tkn.Repr}
